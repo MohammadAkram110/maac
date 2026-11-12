@@ -1,0 +1,15 @@
+{
+  "id": "./",
+  "name": "My Shift & Life Digital Diary",
+  "short_name": "Shift & Life",
+  "description": "CAN Plant shift and personal diary",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f4f7f4",
+  "theme_color": "#14352d",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

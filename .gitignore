@@ -1,0 +1,9 @@
+node_modules/
+.vercel/
+.env*
+*.zip
+*.shiftlife
+Task_Desk_Backup_*.json
+My_Shift_and_Life_*.json
+Shift_Report_*.txt
+Expenses_*.csv

@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#14352d">
+  <meta name="description" content="A device-only diary for CAN Plant shifts and personal planning.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' blob: data:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>My Shift &amp; Life Digital Diary</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+  <script src="task-desk.js" defer></script>
+  <script src="core.js" defer></script>
+  <script src="work-routines.js" defer></script>
+  <script src="shift-schedule.js" defer></script>
+  <script src="faith.js" defer></script>
+  <script src="browser-legacy.js" defer></script>
+  <script src="device-db.js" defer></script>
+  <script src="task-desk-import.js" defer></script>
+  <script src="work-hierarchy.js" defer></script>
+  <script src="progress.js" defer></script>
+  <script src="budgeting.js" defer></script>
+  <script src="storage.js" defer></script>
+  <script src="notebook.js" defer></script>
+  <script src="expenses.js" defer></script>
+  <script src="workflow.js" defer></script>
+  <script src="clock.js" defer></script>
+  <script src="day-tools.js" defer></script>
+  <script src="shift-companion.js" defer></script>
+  <script src="planning-tools.js" defer></script>
+  <script src="day-plan.js" defer></script>
+  <script src="planning-ui.js" defer></script>
+  <script src="roster-support.js" defer></script>
+  <script src="shift-companion-ui.js" defer></script>
+  <script src="activity.js" defer></script>
+  <script src="day-plan-ui.js" defer></script>
+  <script src="assignments.js" defer></script>
+  <script src="dashboard.js" defer></script>
+  <script src="highlights.js" defer></script>
+  <script src="coach.js" defer></script>
+  <script src="workbook.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to diary</a>
+  <div class="shell">
+    <aside class="side" id="sidebar">
+      <a class="brand" href="#stickies" data-action="navigate" data-view="stickies" aria-label="My Shift &amp; Life, Stickies home">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOTIiIGhlaWdodD0iMTkyIiB2aWV3Qm94PSIwIDAgMTkyIDE5MiI+CiAgPHJlY3Qgd2lkdGg9IjE5MiIgaGVpZ2h0PSIxOTIiIHJ4PSI0MCIgZmlsbD0iI2I5ZTBiZCIvPgogIDxwYXRoIGQ9Ik05NiA2OGMtMTQtMTItMzItMTUtNDktMTJ2NzBjMTctMyAzNSAwIDQ5IDEyIDE0LTEyIDMyLTE1IDQ5LTEyVjU2Yy0xNy0zLTM1IDAtNDkgMTJ2NzBtLTM3LTYwYzktMSAxNyAxIDI0IDVtLTI0IDE0YzktMSAxNyAxIDI0IDVtNTAtMjRjLTktMS0xNyAxLTI0IDVtMjQgMTRjLTktMS0xNyAxLTI0IDUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzE5NDgzMiIgc3Ryb2tlLXdpZHRoPSI3IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==" width="38" height="38" alt="">
+        <span><strong>My Shift &amp; Life</strong><small>DIGITAL DIARY</small></span>
+      </a>
+      <nav id="navigation" aria-label="Main navigation"></nav>
+      <div class="side-footer"><span class="state-dot"></span><span>Saved on this device</span></div>
+    </aside>
+    <div class="workspace">
+      <div class="diary-top">
+      <header class="toolbar">
+        <button id="menu" class="icon-button mobile-menu" type="button" data-action="menu" aria-controls="sidebar" aria-expanded="false" aria-label="Menu"></button>
+        <span class="context"><span class="context-dot"></span> CAN Plant <span class="toolbar-divider"></span> Asia/Karachi</span>
+        <div class="toolbar-actions">
+          <button class="tool-button" type="button" data-action="task-focus" id="focus-toggle" aria-label="Focus" aria-pressed="false" title="Focus" disabled><span>Focus</span></button>
+          <button class="tool-button" type="button" data-action="companion-pause" id="pause-toggle" disabled><span>Pause &amp; capture</span></button>
+          <button class="icon-button" type="button" data-action="navigate" data-view="search" id="search-button" aria-label="Search diary" title="Search diary"></button>
+          <button class="icon-button reminder-button" type="button" data-action="reminders" id="reminder-button" aria-label="Reminders"></button>
+          <details class="toolbar-more">
+            <summary>Tools</summary>
+            <div class="toolbar-menu">
+              <button class="tool-button" type="button" data-action="task-focus">Focus</button>
+              <button class="tool-button" type="button" data-action="companion-pause">Pause &amp; capture</button>
+              <button class="tool-button" type="button" data-action="meal-log">Meal log</button>
+              <button class="tool-button sticky-toggle" type="button" data-action="sticky-dock" id="sticky-toggle" aria-label="Show pinned stickies" aria-controls="sticky-dock" aria-expanded="false" disabled><span>Pinned stickies</span><span id="sticky-count" class="sticky-count" hidden></span></button>
+              <button class="tool-button sticky-toggle" type="button" data-action="task-dock" id="task-toggle" aria-label="Pin Tasks panel" aria-controls="task-dock" aria-expanded="false" disabled><span>Pinned tasks</span></button>
+              <button class="tool-button" type="button" data-action="add" id="quick-add">Add diary entry</button>
+            </div>
+          </details>
+        </div>
+      </header>
+      <section id="shift-alarms" class="shift-alarms" aria-labelledby="shift-alarms-title" hidden></section>
+      </div>
+      <main id="main" tabindex="-1">
+        <p class="empty">Opening your diary…</p>
+        <p class="muted">If this message stays on screen, reload this page in your browser.</p>
+      </main>
+      <aside class="page-dock" id="page-dock" aria-label="Pinned work" hidden>
+      <section class="sticky-dock" id="sticky-dock" aria-labelledby="sticky-dock-title" hidden>
+        <header class="sticky-dock-head">
+          <div class="panel-head">
+            <div><span class="eyebrow">Across diary pages</span><h2 id="sticky-dock-title">Pinned stickies</h2></div>
+            <button class="icon-button" type="button" data-action="sticky-dock" data-hide="yes" id="sticky-dock-close" aria-label="Hide sticky panel" title="Hide sticky panel"></button>
+          </div>
+          <div class="actions">
+            <button class="primary small" type="button" data-action="sticky-new" data-pinned="yes" id="sticky-dock-add">Add pinned sticky</button>
+            <button class="text-button small" type="button" data-action="navigate" data-view="stickies">Open board</button>
+          </div>
+        </header>
+        <div class="sticky-dock-list" id="sticky-dock-list"></div>
+      </section>
+      <section class="sticky-dock" id="task-dock" aria-labelledby="task-dock-title" hidden>
+        <header class="sticky-dock-head">
+          <div class="panel-head">
+            <div><span class="eyebrow">Across diary pages</span><h2 id="task-dock-title">Pinned Tasks panel</h2></div>
+            <button class="icon-button" type="button" data-action="task-dock" data-hide="yes" id="task-dock-close" aria-label="Hide Tasks panel" title="Hide Tasks panel"></button>
+          </div>
+          <div class="actions">
+            <button class="primary small" type="button" data-action="add" data-type="task" id="task-dock-add">New task</button>
+            <button class="text-button small" type="button" data-action="navigate" data-view="tasks">Open Tasks</button>
+          </div>
+        </header>
+        <div class="sticky-dock-list" id="task-dock-list"></div>
+      </section>
+      </aside>
+    </div>
+  </div>
+  <nav id="mobile-navigation" class="mobile-nav" aria-label="Quick navigation"></nav>
+  <button id="nav-overlay" type="button" data-action="menu" aria-label="Close menu" hidden></button>
+  <dialog id="dialog" aria-labelledby="dialog-title"></dialog>
+  <dialog id="confirm" aria-labelledby="confirm-title"></dialog>
+  <section id="meal-popup" class="meal-popup" aria-label="Meal reminder" hidden></section>
+  <section id="work-update-popup" class="work-update-popup" aria-labelledby="work-update-title" hidden></section>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <div id="print-area"></div>
+  <noscript><p>Turn on JavaScript to open this diary.</p></noscript>
+</body>
+</html>
